@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40D2C325E99AEA45E8B0D1D3 /* Pods_Warren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E15DD33F7A3044D56FFAA93 /* Pods_Warren.framework */; };
 		6A78AFC2286E6578007A4360 /* WarrenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78AFC1286E6578007A4360 /* WarrenApp.swift */; };
 		6A78AFC4286E6578007A4360 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78AFC3286E6578007A4360 /* ContentView.swift */; };
 		6A78AFC6286E657A007A4360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A78AFC5286E657A007A4360 /* Assets.xcassets */; };
@@ -19,6 +20,9 @@
 		6A78AFC3286E6578007A4360 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6A78AFC5286E657A007A4360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A78AFC8286E657A007A4360 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6E15DD33F7A3044D56FFAA93 /* Pods_Warren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Warren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87DBC2F609A16737199000DD /* Pods-Warren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warren.debug.xcconfig"; path = "Target Support Files/Pods-Warren/Pods-Warren.debug.xcconfig"; sourceTree = "<group>"; };
+		A8E5EC4A9B9E41CCF06000EF /* Pods-Warren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warren.release.xcconfig"; path = "Target Support Files/Pods-Warren/Pods-Warren.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40D2C325E99AEA45E8B0D1D3 /* Pods_Warren.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2015436C8088D418D08ACEF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87DBC2F609A16737199000DD /* Pods-Warren.debug.xcconfig */,
+				A8E5EC4A9B9E41CCF06000EF /* Pods-Warren.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A78AFB5286E6578007A4360 = {
 			isa = PBXGroup;
 			children = (
 				6A78AFC0286E6578007A4360 /* Warren */,
 				6A78AFBF286E6578007A4360 /* Products */,
+				2015436C8088D418D08ACEF2 /* Pods */,
+				7D15CFBCED4A03C94AFCFCEF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +84,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		7D15CFBCED4A03C94AFCFCEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E15DD33F7A3044D56FFAA93 /* Pods_Warren.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A78AFCC286E657A007A4360 /* Build configuration list for PBXNativeTarget "Warren" */;
 			buildPhases = (
+				0CD1B888CAA583B799C02135 /* [CP] Check Pods Manifest.lock */,
 				6A78AFBA286E6578007A4360 /* Sources */,
 				6A78AFBB286E6578007A4360 /* Frameworks */,
 				6A78AFBC286E6578007A4360 /* Resources */,
+				CD9E443C62A3A0EAA46EAE5F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CD1B888CAA583B799C02135 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Warren-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD9E443C62A3A0EAA46EAE5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Warren/Pods-Warren-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Warren/Pods-Warren-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Warren/Pods-Warren-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A78AFBA286E6578007A4360 /* Sources */ = {
@@ -261,6 +330,7 @@
 		};
 		6A78AFCD286E657A007A4360 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87DBC2F609A16737199000DD /* Pods-Warren.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +359,7 @@
 		};
 		6A78AFCE286E657A007A4360 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8E5EC4A9B9E41CCF06000EF /* Pods-Warren.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
