@@ -7,4 +7,5 @@ target 'Warren' do
 
   # Pods for Warren
   pod 'Alamofire'
+  pod 'KeychainSwift', '~> 20.0'
 end
