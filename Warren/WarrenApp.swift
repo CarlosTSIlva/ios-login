@@ -2,9 +2,13 @@ import SwiftUI
 
 @main
 struct WarrenApp: App {
+    @ObservedObject var userStateViewModel = LoginViewModel()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginControlView()
+            .environmentObject(userStateViewModel)
+
         }
     }
 }

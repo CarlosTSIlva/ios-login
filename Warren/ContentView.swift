@@ -155,29 +155,3 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct LoginResponse:Decodable {
-    let accessToken: String
-    let refreshToken: String
-}
-
-struct PortfolioResponse: Decodable {
-    let portfolios: [WalletItens]
-}
-
-struct WalletItens: Decodable {
-
-    let _id: String
-    let name: String
-    let totalBalance: Double
-    let goalAmount: Int?
-    let goalDate: String
-    let background: WalletImages
-}
-
-struct WalletImages: Decodable {
-    let thumb: String
-    let small: String
-    let full: String
-    let regular: String
-    let raw: String
-}
