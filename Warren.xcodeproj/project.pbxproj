@@ -8,18 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		40D2C325E99AEA45E8B0D1D3 /* Pods_Warren.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E15DD33F7A3044D56FFAA93 /* Pods_Warren.framework */; };
+		6A6D5BC12877CF97005A61A0 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D5BC02877CF97005A61A0 /* Login.swift */; };
+		6A7396CA2879FD8D00086FF4 /* LoginControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7396C92879FD8D00086FF4 /* LoginControlView.swift */; };
+		6A7396CC287A00F400086FF4 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7396CB287A00F400086FF4 /* DashboardView.swift */; };
+		6A7396D0287A674600086FF4 /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7396CF287A674600086FF4 /* DashboardModel.swift */; };
+		6A7396D2287A69A500086FF4 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7396D1287A69A500086FF4 /* Dashboard.swift */; };
+		6A7396D5287BB54E00086FF4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A7396D4287BB54E00086FF4 /* Button.swift */; };
 		6A78AFC2286E6578007A4360 /* WarrenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78AFC1286E6578007A4360 /* WarrenApp.swift */; };
 		6A78AFC4286E6578007A4360 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78AFC3286E6578007A4360 /* ContentView.swift */; };
 		6A78AFC6286E657A007A4360 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A78AFC5286E657A007A4360 /* Assets.xcassets */; };
 		6A78AFC9286E657A007A4360 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A78AFC8286E657A007A4360 /* Preview Assets.xcassets */; };
+		6A956641287907C000C7251A /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A956640287907C000C7251A /* APIManager.swift */; };
+		6A95664328790AC000C7251A /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95664228790AC000C7251A /* APIServices.swift */; };
+		6A95664728790D3200C7251A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95664628790D3200C7251A /* LoginView.swift */; };
+		6A95664928790E0400C7251A /* LoginViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95664828790E0400C7251A /* LoginViewModal.swift */; };
+		6A95664B287913A200C7251A /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A95664A287913A200C7251A /* EncodableExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A6D5BC02877CF97005A61A0 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		6A7396C92879FD8D00086FF4 /* LoginControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControlView.swift; sourceTree = "<group>"; };
+		6A7396CB287A00F400086FF4 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		6A7396CF287A674600086FF4 /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		6A7396D1287A69A500086FF4 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		6A7396D4287BB54E00086FF4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		6A78AFBE286E6578007A4360 /* Warren.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Warren.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A78AFC1286E6578007A4360 /* WarrenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarrenApp.swift; sourceTree = "<group>"; };
 		6A78AFC3286E6578007A4360 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6A78AFC5286E657A007A4360 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A78AFC8286E657A007A4360 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6A956640287907C000C7251A /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		6A95664228790AC000C7251A /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		6A95664628790D3200C7251A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6A95664828790E0400C7251A /* LoginViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModal.swift; sourceTree = "<group>"; };
+		6A95664A287913A200C7251A /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		6E15DD33F7A3044D56FFAA93 /* Pods_Warren.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Warren.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87DBC2F609A16737199000DD /* Pods-Warren.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warren.debug.xcconfig"; path = "Target Support Files/Pods-Warren/Pods-Warren.debug.xcconfig"; sourceTree = "<group>"; };
 		A8E5EC4A9B9E41CCF06000EF /* Pods-Warren.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Warren.release.xcconfig"; path = "Target Support Files/Pods-Warren/Pods-Warren.release.xcconfig"; sourceTree = "<group>"; };
@@ -43,8 +65,51 @@
 				87DBC2F609A16737199000DD /* Pods-Warren.debug.xcconfig */,
 				A8E5EC4A9B9E41CCF06000EF /* Pods-Warren.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A6D5BBF2877CF85005A61A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A6D5BC02877CF97005A61A0 /* Login.swift */,
+				6A95664A287913A200C7251A /* EncodableExtension.swift */,
+				6A7396D1287A69A500086FF4 /* Dashboard.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6A7396C62879FC8600086FF4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A95664628790D3200C7251A /* LoginView.swift */,
+				6A95664828790E0400C7251A /* LoginViewModal.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6A7396C72879FCE200086FF4 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				6A7396CB287A00F400086FF4 /* DashboardView.swift */,
+				6A7396CF287A674600086FF4 /* DashboardModel.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		6A7396C82879FD7C00086FF4 /* LoginControl */ = {
+			isa = PBXGroup;
+			children = (
+				6A7396C92879FD8D00086FF4 /* LoginControlView.swift */,
+			);
+			path = LoginControl;
+			sourceTree = "<group>";
+		};
+		6A7396D3287BB53C00086FF4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6A7396D4287BB54E00086FF4 /* Button.swift */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 		6A78AFB5286E6578007A4360 = {
@@ -68,6 +133,10 @@
 		6A78AFC0286E6578007A4360 /* Warren */ = {
 			isa = PBXGroup;
 			children = (
+				6A7396D3287BB53C00086FF4 /* Components */,
+				6A95664428790D1900C7251A /* View */,
+				6A95663E2879077F00C7251A /* Data */,
+				6A6D5BBF2877CF85005A61A0 /* Model */,
 				6A78AFC1286E6578007A4360 /* WarrenApp.swift */,
 				6A78AFC3286E6578007A4360 /* ContentView.swift */,
 				6A78AFC5286E657A007A4360 /* Assets.xcassets */,
@@ -82,6 +151,33 @@
 				6A78AFC8286E657A007A4360 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6A95663E2879077F00C7251A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6A95663F2879078B00C7251A /* NetWork */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6A95663F2879078B00C7251A /* NetWork */ = {
+			isa = PBXGroup;
+			children = (
+				6A956640287907C000C7251A /* APIManager.swift */,
+				6A95664228790AC000C7251A /* APIServices.swift */,
+			);
+			path = NetWork;
+			sourceTree = "<group>";
+		};
+		6A95664428790D1900C7251A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A7396C82879FD7C00086FF4 /* LoginControl */,
+				6A7396C72879FCE200086FF4 /* Dashboard */,
+				6A7396C62879FC8600086FF4 /* Login */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7D15CFBCED4A03C94AFCFCEF /* Frameworks */ = {
@@ -206,8 +302,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A956641287907C000C7251A /* APIManager.swift in Sources */,
+				6A7396D0287A674600086FF4 /* DashboardModel.swift in Sources */,
+				6A6D5BC12877CF97005A61A0 /* Login.swift in Sources */,
 				6A78AFC4286E6578007A4360 /* ContentView.swift in Sources */,
+				6A95664928790E0400C7251A /* LoginViewModal.swift in Sources */,
+				6A95664728790D3200C7251A /* LoginView.swift in Sources */,
+				6A95664B287913A200C7251A /* EncodableExtension.swift in Sources */,
 				6A78AFC2286E6578007A4360 /* WarrenApp.swift in Sources */,
+				6A7396CC287A00F400086FF4 /* DashboardView.swift in Sources */,
+				6A7396CA2879FD8D00086FF4 /* LoginControlView.swift in Sources */,
+				6A7396D2287A69A500086FF4 /* Dashboard.swift in Sources */,
+				6A7396D5287BB54E00086FF4 /* Button.swift in Sources */,
+				6A95664328790AC000C7251A /* APIServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
